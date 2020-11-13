@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/master.css">
+    <script src="../js/master.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>FLIXNET - FINAL</title>
+</head>
+<body class="body">
+    <div class="header">
+        <div class="logo">
+            <a href="#"><h1>FLIXNET</h1></a>
+        </div>
+        <ul class="navigation">
+            <a href="#"><li><b>Home</b></li></a>
+            <a href="generos.html"><li><b>Generos</b></li></a>
+            <a href="peliculas.html"><li><b>Peliculas</b></li></a>
+            <a href="series.html"><li><b>Series</b></li></a>
+        </ul>
+    </div>
+    <!-- MENU OFF CANVAS -->
+<div id="offcanvas-usage" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <h3>Title</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    </div>
+</div>
+    <h1 class="tituloCentral">PROXIMOS ESTRENOS</h1>
+    <!-- SLIDER INICIAL -->
+    
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+        <ul class="uk-slider-items uk-grid">
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="../assets/stranger-things-poster.jpg" alt="Stranger Things">
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="../assets/dark.jpg" alt="Dark">
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="../assets/portada-riverdale-t.jpg" alt="Riverdale">
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="../assets/13-reasons-why5.jpg" alt="13 Reasons Why">
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="../assets/how-to-sell-drugs-online-poster-1024x574-1.jpg" alt="How to sell drugs online">
+                </div>
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+     
+        <!-- PELICULAS POPULARES -->
+    <main>   
+        <h1 class='titulos'>PELICULAS POPULARES</h1>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light series_populares" tabindex="-1" uk-slider>
+
+            <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" id='peliculasPopulares'>
+
+
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+     <!-- SERIES POPULARES -->
+        <h1 class='titulos'>SERIES POPULARES</h1>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light series_populares" tabindex="-1" uk-slider>
+
+            <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" id='seriesPopulares'>
+    
+
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    <!-- ULTIMOS ESTRENOS -->
+        <h1 class='titulos'>LAS FAVORITAS</h1>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light series_populares" tabindex="-1" uk-slider>
+
+            <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" id='ultimosEstrenos'>
+    
+
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <img src="../assets/logotmdb.svg" alt="tmdb">
+        <p>Tiago Palladino y Juana Gomez Prieto</p>
+        <div class="social">
+            <a target="_blank" href="https://instagram.com" uk-icon="icon: instagram"></a>
+            <a target="_blank" href="https://facebook.com" uk-icon="icon: facebook"></a>
+            <a target="_blank" href="https://twitter.com" uk-icon="icon: twitter"></a>
+            <a target="_blank" href="https://youtube.com" uk-icon="icon: youtube"></a>
+        </div>
+        
+    </footer>
+</body>
+</html>

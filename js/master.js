@@ -10,7 +10,7 @@ window.addEventListener ('load', function(){
         //console.log(populares.results[0].poster_path);
         populares.results.forEach(pelicula => {
             let articulo = document.createElement ('article')
-            articulo.innerHTML += `<a href="detalle.html?idSerie=${pelicula.id}"><img src='https://image.tmdb.org/t/p/w500${pelicula.poster_path}' alt='${pelicula.title}'></a>
+            articulo.innerHTML += `<a href="detalle.html?idSerie=${pelicula.id}&title=${pelicula.title}"><img src='https://image.tmdb.org/t/p/w500${pelicula.poster_path}' alt='${pelicula.title}'></a>
             `
             peliculas.append(articulo)
         });
@@ -26,7 +26,7 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=942febef73deb21c3f70ec6b0
         //console.log(populares.results[0].poster_path);
         seriesPopulares.results.forEach(serie => {
             let articulo = document.createElement ('article')
-            articulo.innerHTML += `<a href="detalle.html?idSerie=${serie.id}"><img src='https://image.tmdb.org/t/p/w500${serie.poster_path}' alt='${serie.title}'></a>
+            articulo.innerHTML += `<a href="detalleSerie.html?idSerie=${serie.id}"><img src='https://image.tmdb.org/t/p/w500${serie.poster_path}' alt='${serie.title}'></a>
             `
             series.append(articulo)
         });

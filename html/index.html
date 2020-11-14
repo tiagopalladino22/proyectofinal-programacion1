@@ -12,33 +12,40 @@
     <title>FLIXNET - FINAL</title>
 </head>
 <body class="body">
-    <div class="header">
-        <div class="logo">
-            <a href="#"><h1>FLIXNET</h1></a>
+    <!-- HEADER -->
+    <nav style="background-color: red;" class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="index.html">FLIXNET</a>
         </div>
-        <ul class="navigation">
-            <a href="#"><li><b>Home</b></li></a>
-            <a href="generos.html"><li><b>Generos</b></li></a>
-            <a href="buscador.html"><li><b>Buscador Avanzado</b></li></a>
-            <a href="favoritos.html"><li><b>Favoritos</b></li></a>
-        </ul>
-    </div>
-    <!-- MENU OFF CANVAS -->
-
-<div id="offcanvas-usage" uk-offcanvas>
-    <div class="uk-offcanvas-bar">
-
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-        <h3>Title</h3>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-    </div>
-</div>
-    <h1 class="tituloCentral">PROXIMOS ESTRENOS</h1>
-    <!-- SLIDER INICIAL -->
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Home</a></li>
+                <li class="uk-active"><a href="#">Generos</a></li>
+                <li class="uk-active"><a href="#">Buscador</a></li>
+                <li class="uk-active"><a href="#">Favoritos</a></li>
+                <li><a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-flip" uk-navbar-toggle-icon href="#"></a></li>
+            </ul>
+        </div>
+    </nav>
+      <!-- MENU OFF CANVAS -->
+      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
     
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+    
+            <h3>MENU</h3>
+            <ul class="menu-off">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">GENEROS</a></li>
+                <li><a href="#">BUSCADOR</a></li>
+                <li><a href="#">FAVORITOS</a></li>
+            </ul>
+    
+        </div>
+    </div>
+    
+    <!-- SLIDER INICIAL -->
+    <h1 class="tituloCentral">PROXIMOS ESTRENOS</h1>
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
 
         <ul class="uk-slider-items uk-grid">
@@ -73,7 +80,12 @@
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
     
     </div>
-     
+    <!-- BUSCADOR -->
+    <h1 class='titulos'>BUSCADOR</h1>
+    <form id="buscador" class="uk-search uk-search-large">
+        <span uk-search-icon></span>
+        <input class="uk-search-input" type="search" placeholder="Search...">
+    </form>
         <!-- PELICULAS POPULARES -->
     <main>   
         <h1 class='titulos'>PELICULAS POPULARES</h1>

@@ -3,51 +3,23 @@
     margin: 10 auto;
 }
 /*HEADER*/
-.header {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    background-color: red;
+
+.uk-navbar-container a  {
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
 }
-.logo {
-    height: 100%;
-    float: left;
-    vertical-align: center;
-    font-family: 'Montserrat', sans-serif;
+.uk-navbar-container li a  {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
-.logo a {
-    text-decoration: none;
-}
-.logo h1 {
-    color:black;
-    padding-left: 30px;
-    padding-top: 10px;
-    vertical-align: center;
-}
-.navigation {
-    float: right;
-    height: 100%;
-    padding-right: 30px;
-}
-.navigation a {
-    height: 100%;
-    display: flex;
-    float: left;
-    color: black;
-    padding: 0px 20px;
-}
-.navigation a li {
-    vertical-align: center;
-    display: table-cell;
-    height: 100%;
-    padding-top: 15px;
-    font-family: 'Montserrat', sans-serif;
-}
-.menu-off {
-    display: none;
-}
+
 /*PAGINA DE INICIO*/
+#buscador {
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
 .uk-panel img {
     height: 100%;
     width: 100%;
@@ -137,12 +109,13 @@ article:hover img {
 }
 .datos .descripcion {
     width: 50%;
+    margin: 2%;
 }
 .datos .descripcion .nombre {
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
-    font-size: 35px;
+    font-size: large;
     font-weight: bold;
     margin-top: 3%;
 }
@@ -157,8 +130,8 @@ article:hover img {
     font-size: 20px;
 }
 .imagen {
-    height: 15%;
-    width: 15%;
+    height: 25%;
+    width: 25%;
     margin: 2%;
     border: 5px red solid;
 }

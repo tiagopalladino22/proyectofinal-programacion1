@@ -12,6 +12,9 @@
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
+.menu-off li {
+    list-style-type: none;
+}
 
 /*PAGINA DE INICIO*/
 #buscador {
@@ -124,6 +127,18 @@ article:hover img {
     font-family: 'Montserrat', sans-serif;
 }
 .datos .descripcion .promedio {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.datos .descripcion .genero {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.datos .descripcion .fecha {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;

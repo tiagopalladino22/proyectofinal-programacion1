@@ -92,8 +92,29 @@ article:hover img {
         border: 5px red solid;
     
 }
-
-
+/* LISTA GENEROS */
+.generos {
+    text-align: center;
+    background-color: black;
+    font-size: 30px;
+    }
+.generos li{
+        display: grid;
+        grid-template-rows: 90px;
+    }
+.generos li a {
+        text-align: center;
+        color: red;
+        text-decoration: none;
+    }
+.generos li a:hover{
+        text-decoration: underline;
+    }
+.titulogenero {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
 /*FOOTER*/
 .footer {
     left: 0;
@@ -166,4 +187,9 @@ article:hover img {
     width: 25%;
     margin: 2%;
     border: 5px red solid;
+}
+@media (max-width: 800px) {
+    .uk-navbar-right .uk-active {
+        display: none;
+    }
 }

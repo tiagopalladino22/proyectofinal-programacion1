@@ -39,6 +39,13 @@
     font-size: 30px;
     padding-left: 20px;
 }
+.titulo-resultados {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-left: 20px;
+    margin: 2%;
+}
 .tituloCentral {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -76,6 +83,16 @@ article:hover img {
         border: 5px red solid;
     
 }
+#resultados {
+    height: 48%;
+    width: 48%;
+    margin: 2%;
+}
+#resultados img {
+        border: 5px red solid;
+    
+}
+
 
 /*FOOTER*/
 .footer {

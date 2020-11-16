@@ -12,11 +12,11 @@ window.addEventListener ('load', function(){
   .then(function (serieSolicitada) {
     console.log(serieSolicitada);
     document.querySelector("div.nombre").innerHTML = serieSolicitada.name ;
-    document.querySelector("section.imagen").innerHTML = serieSolicitada.poster_path ;
+    document.querySelector("section.imagen img").src = `https://image.tmdb.org/t/p/original${serieSolicitada.poster_path}` ;
     document.querySelector("div.fecha").innerHTML = serieSolicitada.first_air_date ;
     document.querySelector("div.sinopsis").innerHTML = serieSolicitada.overview ;
     for (var i = 0; i < serieSolicitada.genres.length; i++) {
-        document.querySelector("div.genero").innerHTML +=  `<a href="detalleGenero.html?idSerie=${genre.id}"> Generos: ${serieSolicitada.genres[i].name}</a>`
+        document.querySelector("div.genero").innerHTML +=  `<a href="../detalleGenero.html"> ${serieSolicitada.genres[i].name}</a>`
       }
 
      

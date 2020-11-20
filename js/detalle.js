@@ -20,6 +20,49 @@ window.addEventListener ('load', function(){
     document.querySelector("div.imagen img").src = `https://image.tmdb.org/t/p/original${peliculaSolicitada.poster_path}` ;
   })
 
+//FAVORITOS
+
+
+var recuperoStorage = localStorage.getItem("favoritos");
+
+
+if (recuperoStorage == null ){
+
+  favoritos=[];
+}
+else {
+
+  favoritos=JSON.parse(recuperoStorage);
+}
+
+
+if (favoritos.includes(id)){
+document.querySelector("button.botonFavoritos").innerHTML="Quitar de favoritos"
+}
+
+
+document.querySelector("button.botonFavoritos").onclick=function(){
+
+
+if (favoritos.includes(id)==true){
+
+var index=favoritos.indexOf(id)
+favoritos.splice(index, 1)
+document.querySelector("button.botonFavoritos").innerHTML="Agregar a favoritos"
+}
+else {
+
+  favoritos.push(id);
+document.querySelector("button.botonFavoritos").innerHTML="Quitar de favoritos"
+}
+
+
+
+var infoParaStorage=JSON.stringify(favoritos);
+localStorage.setItem("favoritos", infoParaStorage)
+console.log(localStorage);
+
+}
   //REVIEWS
   /*fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=942febef73deb21c3f70ec6b055cb722&language=en-US&page=1`)
   .then(function (response) {

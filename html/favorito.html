@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/master.css">
-    <script src="../js/detalleSerie.js"></script>
+    <script src="../js/favorito.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
@@ -12,7 +12,7 @@
     <title>FLIXNET - FINAL</title>
 </head>
 <body class="body">
-     <!-- HEADER -->
+    <!-- HEADER -->
     <nav style="background-color: red;" class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-left">
             <a class="uk-navbar-item uk-logo" href="index.html">FLIXNET</a>
@@ -43,33 +43,20 @@
     
         </div>
     </div>
-<!-- DETALLES SERIE -->
-<div class="datos">
-    <section class="imagen">
-        <img src="" alt="">
-    </section>
-    <section class="descripcion">
-        <div class="nombre">
 
-        </div>
-        <br>
-        <div class="sinopsis">
+    <h1 id="series" class='titulos'>MIS FAVORITOS</h1>
 
-        </div>
-        <div class="fecha">
+        <div class="uk-position-relative uk-visible-toggle uk-light series_populares" tabindex="-1" uk-slider>
 
-        </div>
-        <br>
-        <div class="genero">
+            <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" id='favoritos'>
+    
 
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
         </div>
-        <button type="submit" name="button" class="botonFavoritos">
-            AGREGAR A FAVORITOS
-        </button>
-        
-    </section>
-</div>
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer">
         <img src="../assets/logotmdb.svg" alt="tmdb">
         <p>Tiago Palladino y Juana Gomez Prieto</p>

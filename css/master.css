@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 10 auto;
 }
+html {
+    scroll-behavior: smooth;
+}
 /*HEADER*/
 
 .uk-navbar-container a  {
@@ -80,6 +83,15 @@ article:hover img {
     margin: 2%;
 }
 #ultimosEstrenos img {
+        border: 5px red solid;
+    
+}
+#favoritos {
+    height: 48%;
+    width: 48%;
+    margin: 2%;
+}
+#favoritos img {
         border: 5px red solid;
     
 }
@@ -188,6 +200,19 @@ article:hover img {
     margin: 2%;
     border: 5px red solid;
 }
+button.botonFavoritos{
+    height: 60px;
+    border-radius: 0px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 20px;
+    background-color: red;
+    border: solid black 1px;
+    }
+    button.botonFavoritos:hover{
+      background-color: rgb(153, 39, 39);
+    }
+    
 @media (max-width: 800px) {
     .uk-navbar-right .uk-active {
         display: none;

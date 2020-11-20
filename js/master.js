@@ -26,8 +26,7 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=942febef73deb21c3f70ec6b0
         //console.log(populares.results[0].poster_path);
         seriesPopulares.results.forEach(serie => {
             let articulo = document.createElement ('article')
-            articulo.innerHTML += `<a href="detalleSerie.html?idSerie=${serie.id}"><img src='https://image.tmdb.org/t/p/w500${serie.poster_path}' alt='${serie.title}'></a>
-            `
+            articulo.innerHTML += `<a href="detalleSerie.html?idSerie=${serie.id}"><img src='https://image.tmdb.org/t/p/w500${serie.poster_path}' alt='${serie.title}'></a>`
             series.append(articulo)
         });
     })
@@ -46,6 +45,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=942febef73deb21c3f70
             estrenos.append(articulo)
         });
     })
+    
     .catch(function (error){
         console.log(error)
     })

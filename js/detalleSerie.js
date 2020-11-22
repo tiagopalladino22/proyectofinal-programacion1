@@ -16,7 +16,7 @@ window.addEventListener ('load', function(){
     document.querySelector("div.fecha").innerHTML = serieSolicitada.first_air_date ;
     document.querySelector("div.sinopsis").innerHTML = serieSolicitada.overview ;
     for (var i = 0; i < serieSolicitada.genres.length; i++) {
-        document.querySelector("div.genero").innerHTML +=  `<a href="../detalleGenero.html"> ${serieSolicitada.genres[i].name}</a>`
+        document.querySelector("div.genero").innerHTML +=  `<a href="detalleGenero.html?idGenero=${serieSolicitada.genres[i].id}"> ${serieSolicitada.genres[i].name}</a>`
       }
 
      

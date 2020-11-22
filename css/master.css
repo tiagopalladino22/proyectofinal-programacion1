@@ -113,6 +113,15 @@ article:hover img {
         border: 5px red solid;
     
 }
+#generoDetalle {
+    height: 48%;
+    width: 48%;
+    margin: 2%;
+}
+#generoDetalle img {
+        border: 5px red solid;
+    
+}
 /* LISTA GENEROS */
 .generos {
     text-align: center;
@@ -131,6 +140,23 @@ article:hover img {
 .generos li a:hover{
         text-decoration: underline;
     }
+.generosSerie {
+        text-align: center;
+        background-color: black;
+        font-size: 30px;
+        }
+.generosSerie li{
+            display: grid;
+            grid-template-rows: 90px;
+        }
+.generosSerie li a {
+            text-align: center;
+            color: red;
+            text-decoration: none;
+        }
+.generosSerie li a:hover{
+            text-decoration: underline;
+        }
 .titulogenero {
     color: white;
     text-align: center;

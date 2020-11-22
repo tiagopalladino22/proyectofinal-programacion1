@@ -95,6 +95,15 @@ article:hover img {
         border: 5px red solid;
     
 }
+#favoritoSerie {
+    height: 48%;
+    width: 48%;
+    margin: 2%;
+}
+#favoritoSerie img {
+        border: 5px red solid;
+    
+}
 #resultados {
     height: 48%;
     width: 48%;
@@ -212,6 +221,18 @@ button.botonFavoritos{
     button.botonFavoritos:hover{
       background-color: rgb(153, 39, 39);
     }
+    button.botonFavoritosSerie{
+        height: 60px;
+        border-radius: 0px;
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif ;
+        font-size: 20px;
+        background-color: red;
+        border: solid black 1px;
+        }
+        button.botonFavoritosSerie:hover{
+          background-color: rgb(153, 39, 39);
+        }
     
 @media (max-width: 800px) {
     .uk-navbar-right .uk-active {

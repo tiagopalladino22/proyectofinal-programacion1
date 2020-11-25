@@ -1,27 +1,26 @@
 window.addEventListener ('load', function(){
     
-    let APIkey = '942febef73deb21c3f70ec6b055cb722'
-    let resultados = new URLSearchParams(location.search);
-    let id = resultados.get('buscador');
-    let foto ="https://image.tmdb.org/t/p/original/"
-
-    fetch(`https://api.themoviedb.org/3/search/movie?api_key=${APIkey}&language=en-US&query=${id}&page=1`)
-   .then(function (response) {
-     return response.json();
-   })
-   .then(function (resultadosBusqueda) {
-     console.log(resultadosBusqueda);
-    if (resultadosBusqueda.results.length==0) {
-      alert("No se han encontrado resultados para su busqueda")
-    } else {
-
-
-     for (var i = 0; i < resultadosBusqueda.results.length; i++) {
-       if (resultadosBusqueda.results[i].poster_path != null) {
-         document.querySelector("#resultados").innerHTML += "<li><a href='detalle.html?idSerie="+resultadosBusqueda.results[i].id+"'><img src="+ foto + resultadosBusqueda.results[i].poster_path+" alt=''></a></li>"
-       }
-
-   }}
-
-   })
+  fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=942febef73deb21c3f70ec6b055cb722")
+.then(function (response) {
+return response.json();
 })
+.then(function (listaGeneros) {
+console.log(listaGeneros);
+for (var i = 0; i < listaGeneros.genres.length; i++) {
+  document.querySelector("section.generos").innerHTML += "<li><a href='detalleGenero.html?idGenero="+listaGeneros.genres[i].id+"'>"+listaGeneros.genres[i].name+"</a></li>"
+  }})
+
+  fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=942febef73deb21c3f70ec6b055cb722")
+  .then(function (response) {
+    return response.json();
+    })
+  .then(function (listaGenerosSerie) {
+    console.log(listaGenerosSerie);
+    for (var i = 0; i < listaGenerosSerie.genres.length; i++) {
+      document.querySelector("section.generosSerie").innerHTML += "<li><a href='detalleGenero.html?idGenero="+listaGenerosSerie.genres[i].id+"'>"+listaGenerosSerie.genres[i].name+"</a></li>"
+      }})
+
+
+}
+
+)

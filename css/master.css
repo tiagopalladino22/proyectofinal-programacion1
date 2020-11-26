@@ -104,14 +104,23 @@ article:hover img {
         border: 5px red solid;
     
 }
-#resultados {
+#resultadosBusqueda {
     height: 48%;
     width: 48%;
     margin: 2%;
 }
-#resultados img {
-        border: 5px red solid;
+#resultadosBusqueda img {
+    border: 5px red solid;
     
+}
+#seriesBuscadas {
+    height: 48%;
+    width: 48%;
+    margin: 5%;
+}
+
+#seriesBuscadas img {
+    border: 5px red solid;
 }
 #generoDetalle {
     height: 48%;

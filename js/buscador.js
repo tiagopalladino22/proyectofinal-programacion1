@@ -86,32 +86,3 @@ window.onload=function(){
       if (seriesBuscadas.results[i].poster_path!=null) {
         document.querySelector("#seriesBuscadas").innerHTML += "<li><a href='detalle.html?idSerie="+seriesBuscadas.results[i].id+"'><img src="+URLPoster+seriesBuscadas.results[i].poster_path+" alt=''></a></li>"
       }}
-  
-  }
-  )
-  }
-  }
-  
-  
-  //DROPDOWN NAV PARA LOS GENEROS DE LAS SERIES
-  
-  
-  fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=" + APIkey)
-  .then(function (response) {
-    return response.json();
-    })
-  .then(function (seriesGeneros) {
-    console.log(seriesGeneros);
-    for (var i = 0; i < seriesGeneros.genres.length; i++) {
-      document.querySelector("#dropdowngeneros").innerHTML += "<li><a href='seriesporgenero.html?idGenero="+seriesGeneros.genres[i].id+"'>"+seriesGeneros.genres[i].name+"</a></li>"
-      }})
-  
-  
-  
-  
-  
-  
-  
-  
-  }
-  

@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 10 auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*HEADER*/
+
+.uk-navbar-container a  {
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+}
+.uk-navbar-container li a  {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.menu-off li {
+    list-style-type: none;
+}
+
+/*BUSCADOR*/
+#buscador {
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+  
+  form div {
+    width: 23vw;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+  
+  select.generoaño{
+    margin-top: 49px;
+    height: 25px;
+    width: 80px;
+    color: aliceblue;
+  
+  }
+  
+  select.generoorden{
+    margin-top: 49px;
+    height: 25px;
+  
+  }
+  
+  select.generodescartado{
+  height: 25px;
+  
+  }
+  
+  select.generoelegido{
+  height: 25px;
+  
+  
+  }
+  
+  button.buscadoravanzado{
+    width: 350px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 30px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 17px;
+ }

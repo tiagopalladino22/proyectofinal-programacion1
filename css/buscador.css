@@ -38,10 +38,10 @@ html {
   }
   
   select.generoaño{
-    margin-top: 49px;
-    height: 25px;
-    width: 80px;
-    color: aliceblue;
+    text-align: center;
+    background-color: white;
+    font-size: 30px;
+    }
   
   }
   
@@ -62,7 +62,7 @@ html {
   
   }
   
-  button.buscadoravanzado{
+  button.buscador{
     width: 350px;
     margin: auto;
     margin-top: 90px;

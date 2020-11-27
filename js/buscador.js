@@ -1,6 +1,6 @@
 window.onload=function(){
 
-    var APIkey="23b5083840125a6643dffb1e3daa3bff"
+    var APIkey="942febef73deb21c3f70ec6b055cb722"
     var URLPoster="https://image.tmdb.org/t/p/original/"
   
   //genero elegido
@@ -50,6 +50,7 @@ window.onload=function(){
     var posicion4=document.querySelector("select.generoorden").selectedIndex
     var options4=document.querySelector("select.generoorden").options
   
+
   
     var link="https://api.themoviedb.org/3/discover/tv?api_key=23b5083840125a6643dffb1e3daa3bff&language=en-US"
   
@@ -86,3 +87,5 @@ window.onload=function(){
       if (seriesBuscadas.results[i].poster_path!=null) {
         document.querySelector("#seriesBuscadas").innerHTML += "<li><a href='detalle.html?idSerie="+seriesBuscadas.results[i].id+"'><img src="+URLPoster+seriesBuscadas.results[i].poster_path+" alt=''></a></li>"
       }}
+  
+  }

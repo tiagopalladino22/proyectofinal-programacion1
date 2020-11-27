@@ -1,5 +1,5 @@
 window.onload=function(){
-  var APIkey="23b5083840125a6643dffb1e3daa3bff"
+  var APIkey="942febef73deb21c3f70ec6b055cb722"
   var URLPoster="https://image.tmdb.org/t/p/original/"
   var urlParams = new URLSearchParams(location.search);
   var query = urlParams.get('buscador');
